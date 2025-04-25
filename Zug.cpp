@@ -31,6 +31,7 @@ double Zug::durchschnittsLaenge() const {
     }
     return (temp/anzahlWaggons);
 }
+
 bool Zug::findWagNr(int waggonNr) const {
     bool gefunden = false;
     for (int i = 0; i < this->anzahlWaggons; i++) {
@@ -39,4 +40,30 @@ bool Zug::findWagNr(int waggonNr) const {
         }
     }
     return gefunden;
+}
+
+double Zug::longestTrain() const {
+    if (anzahlWaggons == 0) {
+        return 0.0;
+    }
+    double maxLength = waggons[0].getLength();
+    for (int i = 1; i < anzahlWaggons; i++) {
+        if (waggons[i].getLength() > maxLength) {
+            maxLength = waggons[i].getLength();
+        }
+    }
+    return maxLength;
+}
+
+double Zug::shortestTrain() const {
+    if (anzahlWaggons == 0) {
+        return 0.0;
+    }
+    double maxLength = waggons[0].getLength();
+    for (int i = 1; i < anzahlWaggons; i++) {
+        if (waggons[i].getLength() < maxLength) {
+            maxLength = waggons[i].getLength();
+        }
+    }
+    return maxLength;
 }

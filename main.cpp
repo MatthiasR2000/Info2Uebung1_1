@@ -14,5 +14,7 @@ int main() {
     cout << "Average length of train: " <<  zug1.durchschnittsLaenge() << endl;
     cout << zug1.findWagNr(3) << endl;
     cout << zug1.findWagNr(4) << endl;
+    cout << "Longest train is: " << zug1.longestTrain() << endl;
+    cout << "Shortest train is: " << zug1.shortestTrain() << endl;
     return 0;
 }

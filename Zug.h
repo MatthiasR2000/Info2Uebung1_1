@@ -21,6 +21,8 @@ public:
     void listWaggons() const;
     double durchschnittsLaenge() const;
     bool findWagNr(int waggonNr) const;
+    double longestTrain() const;
+    double shortestTrain() const;
 };
 
 #endif //ZUG_H
