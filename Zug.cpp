@@ -11,8 +11,8 @@ Zug::Zug(string name) {
 
 void Zug::addWaggon(const Waggon& waggon) {
     if (anzahlWaggons < MAX_WAGGONS) {
-        waggons[anzahlWaggons] = waggon;
-        anzahlWaggons++;
+        this->waggons[this->anzahlWaggons] = waggon;
+        this->anzahlWaggons++;
     } else {
         cout << "Cannot add waggon: Maximum capacity reached!" << endl;
     }
