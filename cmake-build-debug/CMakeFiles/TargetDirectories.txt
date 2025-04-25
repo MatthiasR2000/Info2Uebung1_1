@@ -1,0 +1,3 @@
+/Users/matthiasroos/CLionProjects/Info2Uebung1.1/cmake-build-debug/CMakeFiles/Info2Uebung1_1.dir
+/Users/matthiasroos/CLionProjects/Info2Uebung1.1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/matthiasroos/CLionProjects/Info2Uebung1.1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
