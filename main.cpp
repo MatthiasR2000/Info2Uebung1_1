@@ -11,7 +11,7 @@ int main() {
     zug1.addWaggon(waggon3);
 
     zug1.listWaggons();
-    cout << "Durchschnittliche laenge des Zuges: " <<  zug1.durchschnittsLaenge() << endl;
+    cout << "Average length of train: " <<  zug1.durchschnittsLaenge() << endl;
     cout << zug1.findWagNr(3) << endl;
     cout << zug1.findWagNr(4) << endl;
     return 0;
