@@ -7,6 +7,7 @@
 #include "Waggon.h"
 #include <string>
 #include <iostream>
+#include <vector>
 using namespace std;
 
 class Zug {
@@ -15,10 +16,13 @@ private:
     string name;
     Waggon waggons[MAX_WAGGONS];
     int anzahlWaggons;
+    vector<Waggon> waggons2;
 public:
     Zug(string name);
     void addWaggon(const Waggon& waggon);
+    void addWaggonVector(const Waggon& waggon);
     void listWaggons() const;
+    void listWaggonsVector() const;
     double durchschnittsLaenge() const;
     bool findWagNr(int waggonNr) const;
     double longestTrain() const;

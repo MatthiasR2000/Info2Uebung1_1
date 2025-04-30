@@ -18,9 +18,25 @@ void Zug::addWaggon(const Waggon& waggon) {
     }
 }
 
+
+void Zug::addWaggonVector(const Waggon& waggon) {
+    if (anzahlWaggons < MAX_WAGGONS) {
+        waggons2.push_back(waggon);
+        this->anzahlWaggons++;
+    } else {
+        cout << "Cannot add waggon: Maximum capacity reached!" << endl;
+    }
+}
+
 void Zug::listWaggons() const {
     for (int i = 0; i < anzahlWaggons; ++i) {
         waggons[i].printData();
+    }
+}
+
+void Zug::listWaggonsVector() const {
+    for (int i = 0; i < waggons2.size(); ++i) {
+        waggons2[i].printData();
     }
 }
 
@@ -56,6 +72,7 @@ double Zug::longestTrain() const {
 }
 
 double Zug::shortestTrain() const {
+
     if (anzahlWaggons == 0) {
         return 0.0;
     }
